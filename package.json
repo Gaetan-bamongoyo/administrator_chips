@@ -1,0 +1,25 @@
+{
+  "name": "administrator_chips",
+  "version": "1.0.0",
+  "description": "une api pour le business",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaetan-bamongoyo/administrator_chips.git"
+  },
+  "author": "gaetan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaetan-bamongoyo/administrator_chips/issues"
+  },
+  "homepage": "https://github.com/Gaetan-bamongoyo/administrator_chips#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  }
+}
