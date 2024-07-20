@@ -4,13 +4,13 @@ module.exports = (sequelize, DataTypes)=>{
             type: DataTypes.INTEGER
         },
         montant: {
-            type: DataTypes.FLOAT
+            type: DataTypes.INTEGER
         },
         vendu: {
             type: DataTypes.INTEGER
         },
         manquant: {
-            type: DataTypes.FLOAT
+            type: DataTypes.INTEGER
         }
     })
     return Vente
