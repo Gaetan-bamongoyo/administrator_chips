@@ -29,6 +29,7 @@ db.motif = require('../model/motifdepense.js')(sequelize, DataTypes)
 db.depense = require('../model/depense.js')(sequelize, DataTypes)
 db.personnel = require('../model/personnel.js')(sequelize, DataTypes)
 db.vente = require('../model/vente.js')(sequelize, DataTypes)
+db.production = require('../model/production.js')(sequelize, DataTypes)
 
 db.sequelize.sync({ force: false })
 .then(()=>{
@@ -60,6 +61,15 @@ db.personnel.hasMany(db.vente, {
 db.vente.belongsTo(db.personnel, {
     foreignKey: 'personnel_id',
     as: 'vente'
+})
+
+db.session.hasMany(db.production, {
+    foreignKey: 'session_id',
+    as: 'production'
+})
+db.production.belongsTo(db.session, {
+    foreignKey: 'session_id',
+    as: 'session'
 })
 
 module.exports = db

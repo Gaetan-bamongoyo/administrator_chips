@@ -19,10 +19,12 @@ const routersession  = require('./routes/sessionR')
 const routedepense = require('./routes/depenseR')
 const routemotif = require('./routes/motifR')
 const routervente = require('./routes/venteR')
+const routeproduction = require('./routes/productionR')
 app.use('/admin/session', routersession)
 app.use('/admin/depense', routedepense)
 app.use('/admin/motif', routemotif)
 app.use('/admin/ventepersonnel', routervente)
+app.use('/admin/production', routeproduction)
 
 // test api
 app.get('/', (req, res)=>{
