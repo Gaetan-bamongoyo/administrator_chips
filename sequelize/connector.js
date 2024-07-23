@@ -30,6 +30,7 @@ db.depense = require('../model/depense.js')(sequelize, DataTypes)
 db.personnel = require('../model/personnel.js')(sequelize, DataTypes)
 db.vente = require('../model/vente.js')(sequelize, DataTypes)
 db.production = require('../model/production.js')(sequelize, DataTypes)
+db.user = require('../model/user.js')(sequelize, DataTypes)
 
 db.sequelize.sync({ force: false })
 .then(()=>{
